@@ -1,0 +1,125 @@
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.content__frame {
+    padding: 22px;
+    border: 4px solid var(--line);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg, var(--cream), #fff3cf);
+    box-shadow: var(--shadow);
+}
+
+.content__topbar {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.section-label {
+    margin: 0 0 6px;
+    font-size: 0.85rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--red);
+}
+
+.content__topbar h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.result-count {
+    margin: 0;
+    padding: 8px 12px;
+    border: 3px solid var(--line);
+    border-radius: 999px;
+    background: white;
+    font-weight: 900;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 18px;
+}
+
+.set-card {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid var(--line);
+    border-radius: 22px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.set-card__studs {
+    display: flex;
+    gap: 8px;
+    padding: 12px 12px 0;
+}
+
+.set-card__image-wrap {
+    aspect-ratio: 4 / 3;
+    margin: 10px 12px 0;
+    border: 4px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #d8efff, #bce2ff);
+}
+
+.set-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.set-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 14px 16px;
+}
+
+.set-card__number {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 900;
+    color: var(--blue);
+}
+
+.set-card__title {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.set-card__meta {
+    margin: 0;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.set-card__button {
+    margin-top: 4px;
+    align-self: start;
+    padding: 10px 14px;
+    border: 3px solid var(--line);
+    border-radius: 14px;
+    background: var(--yellow);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.empty-state {
+    padding: 26px;
+    border: 4px dashed var(--line);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.65);
+    font-weight: 800;
+}

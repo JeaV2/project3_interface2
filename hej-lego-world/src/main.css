@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #e3000b;
+    --yellow: #ffd502;
+    --blue: #006db7;
+    --green: #00a651;
+    --cream: #fff8e8;
+    --paper: #fffdf7;
+    --ink: #1e1e1e;
+    --muted: #5b5b5b;
+    --line: #1d1d1d;
+    --shadow: 0 10px 0 rgba(0, 0, 0, 0.12), 0 18px 35px rgba(0, 0, 0, 0.14);
+    --radius-xl: 28px;
+    --radius-lg: 22px;
+    --radius-md: 16px;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    position: relative;
+    font-family: "Nunito", Arial, sans-serif;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 213, 2, 0.28), transparent 18%),
+        radial-gradient(circle at 88% 12%, rgba(0, 109, 183, 0.24), transparent 18%),
+        linear-gradient(180deg, #fbf4df 0%, #f7ecd0 100%);
+    color: var(--ink);
+    padding: 28px;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+.app-shell {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    gap: 24px;
+}
+
+.zone-list {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.8;
+    font-weight: 800;
+}
+
+
+
+@media (max-width: 960px) {
+    body {
+        padding: 18px;
+    }
+
+    .hero,
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__brick {
+        justify-content: flex-start;
+    }
+}
