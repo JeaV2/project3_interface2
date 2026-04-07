@@ -14,7 +14,6 @@ function Sidebar({ searchTerm, setSearchTerm }) {
                 <p className="helper-text">
                     Typ in het veld en filter direct door de beschikbare sets.
                 </p>
-                <p className="helper-text">{searchTerm}</p>
             </section>
         </aside>
     )
