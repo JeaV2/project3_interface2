@@ -4,7 +4,7 @@ function Sidebar({ setSearchTerm }) {
 
     return (
         <aside className="sidebar">
-            <section className="panel panel--yellow">
+            <section className="panel panel--background">
                 <div className="panel__studs">
                     <span></span><span></span><span></span><span></span>
                 </div>

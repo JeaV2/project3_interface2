@@ -12,6 +12,19 @@
     --ink: #1e1e1e;
     --muted: #5b5b5b;
     --line: #1d1d1d;
+
+    --jet-black: #30343fff;
+    --ghost-white: #fafaffff;
+    --periwinkle: #e4d9ffff;
+    --twilight-indigo: #273469ff;
+    --space-indigo: #1e2749ff;
+
+    --dark-amethyst: #231942ff;
+    --dusty-grape: #5e548eff;
+    --amethyst-smoke: #9f86c0ff;
+    --lilac: #be95c4ff;
+    --pink-orchid: #e0b1cbff;
+
     --shadow: 0 10px 0 rgba(0, 0, 0, 0.12), 0 18px 35px rgba(0, 0, 0, 0.14);
     --radius-xl: 28px;
     --radius-lg: 22px;
@@ -28,9 +41,9 @@ body {
     position: relative;
     font-family: "Nunito", Arial, sans-serif;
     background:
-        radial-gradient(circle at 15% 20%, rgba(255, 213, 2, 0.28), transparent 18%),
-        radial-gradient(circle at 88% 12%, rgba(0, 109, 183, 0.24), transparent 18%),
-        linear-gradient(180deg, #fbf4df 0%, #f7ecd0 100%);
+        radial-gradient(circle at 15% 20%, var(--dark-amethyst), transparent 18%),
+        radial-gradient(circle at 88% 12%, var(--dusty-grape), transparent 18%),
+        linear-gradient(180deg, var(--space-indigo) 0%, var(--pink-orchid) 100%);
     color: var(--ink);
     padding: 28px;
 }
