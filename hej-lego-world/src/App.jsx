@@ -16,7 +16,7 @@ function App() {
     <div className="app-shell">
       <HeroHeader />
       <main className="layout">
-        <Sidebar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        <Sidebar setSearchTerm={setSearchTerm} />
         <SetOverzicht sets={filteredSets} />
       </main>
     </div>

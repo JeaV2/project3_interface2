@@ -1,6 +1,6 @@
 import "./Sidebar.css"
 
-function Sidebar({ searchTerm, setSearchTerm }) {
+function Sidebar({ setSearchTerm }) {
 
     return (
         <aside className="sidebar">
