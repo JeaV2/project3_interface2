@@ -10,9 +10,11 @@ function SetOverzicht({ sets }) {
                         <p className="section-label">Set overzicht</p>
                         <h2>Beschikbare LEGO-sets</h2>
                     </div>
-                    <p id="resultCount" className="result-count">{sets.length} resultaten</p>
+                    <p id="resultCount" className="result-count">{sets.length}{sets.length === 1 ? " resultaat" : " resultaten"}</p>
                 </div>
-
+                {sets.length === 0 && (
+                    <div className="empty-state">Geen LEGO-sets gevonden voor deze zoekopdracht.</div>
+                )}
                 <div id="results" className="results-grid">
                     {sets.map(set => (
                         <SetCard key={set.setNumber} set={set} />
